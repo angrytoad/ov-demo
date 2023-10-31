@@ -8,6 +8,15 @@
 Mobx is being used as a state manager as its very easy to slot into an app 
 and just works really well without needing to add a whole bunch of boilerplate.
 
+I just used the national carbon intensity as I know there is a way to pass a 
+postcode into the regional endpoint but the postcode is tied up in the address
+field as a single string and to be honest didn't want to spend the time 
+fiddling with regex to try and extract it, if the postcode was a separate
+field from the openvolt API I would have used that instead for more accuracy.
+It would be worth considering making that address field an object and having 
+each line a separate value in the future as having access to the postcode 
+without needing to extract it would have been very useful in this case.
+
 I chose not to use a styling framework as its a bit overkill for something 
 like this. Also i'm a big believer in understanding the fundamentals and 
 having a good understanding of CSS without needing to spam classes onto 
