@@ -6,12 +6,14 @@
 ### Additional Notes
 
 Mobx is being used as a state manager as its very easy to slot into an app 
-and just works really well without needing to add a whole bunch of boilerplat.
+and just works really well without needing to add a whole bunch of boilerplate.
 
 I chose not to use a styling framework as its a bit overkill for something 
-like this.
+like this. Also i'm a big believer in understanding the fundamentals and 
+having a good understanding of CSS without needing to spam classes onto 
+everything.
 
-I've spent about 5 or so hours working on this.
+I've spent about 5-6 or so hours working on this.
 
 Technically this app will pull back all customers and meters for each customer
 depending on the API key you use. The times are hardcoded to january only, 
@@ -33,7 +35,8 @@ property on the meter object.
 Components are organised roughly following atomic design principals, this is 
 the most superior way to organism components in my (very) biased opinion.
 
-There could have been a lot more error handling but again, time constraints.
+All the big errors are handled, but there could have been a lot more error 
+handling on a per-request basis.
 
 Likewise with tests, although in the past few years i've had a bit of an 
 epiphany and am now a huge advocate for reducing/eliminating tests in most 
