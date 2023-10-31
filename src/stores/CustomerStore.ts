@@ -18,7 +18,6 @@ class CustomerStore {
   fetchAll(){
     return API.fetchAllCustomers()
       .then((customers) => {
-        console.log(customers);
         customers.forEach((customer) => {
           this.setCustomer(customer._id, customer);
         })

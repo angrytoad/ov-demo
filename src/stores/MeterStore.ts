@@ -39,7 +39,6 @@ class MeterStore {
   fetchMeter(meterId: string){
     return API.fetchMeterData(meterId)
       .then((intervals) => {
-        console.log(intervals);
         this.setMeterData(meterId, intervals)
       })
   }
