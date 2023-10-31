@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --colour-light: #a7b5c3;
+  --colour-dark: #0d1117;
+  --colour-primary: #0052cc;
+  --colour-white: #fff;
+  --border-colour: rgba(255,255,255,0.2);
+
+  /*
+  Spacings
+ */
+  --gap-xs: 0.25rem;
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 1.5rem;
+  --gap-xl: 2rem;
+  --gap-xxl: 2.5rem;
+}
+
+body{
+  font-family: Inter,sans-serif;
+  background-color: var(--colour-dark);
+  color: var(--colour-light);
+  min-height: 100dvh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,h2,h3,h4,h5{
+  margin: 0;
+}
